@@ -113,6 +113,8 @@ ul li a:hover {
   transition: all ease 0.55s;
 }
 
+/*Discover CSS*/
+
 .section-container {
   min-height: 100vh;
   max-width: var(--max-width);
@@ -124,6 +126,75 @@ ul li a:hover {
   gap: 2.5rem;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 5rem;
+  font-weight: 350;
+  font-family: "Noto Serif", sans-serif;
+  line-height: 5.5rem;
+  color: var(--primary-blue);
+}
+
+.description {
+  line-height: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 4rem;
+}
+
+.text > h1 {
+  text-align: center;
+  margin: 2rem 0 3.5rem 0;
+}
+
+.action-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.action-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 180px;
+  height: 60px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 30px;
+  padding: 0 10px;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.action-btn button:hover {
+  border: 2px solid black;
+  background-color: transparent;
+  color: #111;
+  transition: all ease 0.55s;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(40rem, 100%);
+}
+
+.photo img {
+  width: 100%;
+}
+/*Discover CSS End*/
+
+/*About Us CSS*/
+
 .about-us {
   min-height: 100vh;
   max-width: var(--max-width);
@@ -134,7 +205,9 @@ ul li a:hover {
   justify-content: space-evenly;
   align-items: center;
 }
+/*About Us CSS End*/
 
+/*Price Plan CSS*/
 .card-container {
   min-height: 100vh;
   max-width: var(--max-width);
@@ -192,6 +265,9 @@ ul li a:hover {
   gap: 1rem;
   margin: 30px 0;
 }
+/*Price Plan CSS End*/
+
+/*Footer CSS*/
 
 .footer-container {
   background-color: var(--primary-black);
@@ -283,7 +359,7 @@ form .bxs-send:hover {
   gap: 2rem;
 }
 
-.lower-left > div {
+.lower-left a {
   color: var(--primary-white);
   cursor: pointer;
 }
@@ -297,7 +373,7 @@ form .bxs-send:hover {
   color: var(--primary-blue);
 }
 
-.lower-left > div:hover {
+.lower-left a:hover {
   color: var(--primary-blue);
 }
 
@@ -313,71 +389,7 @@ form .bxs-send:hover {
   font-size: 0.7rem;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.heading {
-  font-size: 5rem;
-  font-weight: 350;
-  font-family: "Noto Serif", sans-serif;
-  line-height: 5.5rem;
-  color: var(--primary-blue);
-}
-
-.description {
-  line-height: 1.5rem;
-  font-weight: 200;
-  margin-bottom: 4rem;
-}
-
-.text > h1 {
-  text-align: center;
-  margin: 2rem 0 3.5rem 0;
-}
-
-.action-btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.action-btn button {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 180px;
-  height: 60px;
-  background-color: #111;
-  color: #fff;
-  border-radius: 30px;
-  padding: 0 10px;
-  font-size: 1.25rem;
-  border: none;
-  cursor: pointer;
-}
-
-.action-btn button:hover {
-  border: 2px solid black;
-  background-color: transparent;
-  color: #111;
-  transition: all ease 0.55s;
-}
-
-.image {
-  display: grid;
-  place-items: center;
-}
-
-.image img {
-  width: min(40rem, 100%);
-}
-
-.photo img {
-  width: 100%;
-}
+/*Footer CSS End*/
 
 @media (width < 750px) {
   nav .checkbox {
