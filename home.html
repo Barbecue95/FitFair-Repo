@@ -13,23 +13,23 @@
   <body>
     <nav>
       <div class="nav-content">
-        <div class="logo"><a href="#">FitFair</a></div>
+        <div class="logo"><a href="#">Fitfair</a></div>
         <label for="check" class="checkbox">
           <i class="bx bx-menu"></i>
         </label>
         <input type="checkbox" name="check" id="check" />
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Pricing</a></li>
+          <li><a href="#discover">Home</a></li>
+          <li><a href="#about-us">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
           <li><a href="#">Body Type Guide</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="#footer">FAQ</a></li>
           <li><button id="sign-in">Sign In</button></li>
         </ul>
       </div>
       <hr style="border: 0.5px solid black; max-width: 1200px; margin: auto" />
     </nav>
-    <section class="discover">
+    <section id="discover">
       <div class="section-container">
         <div class="content">
           <h1 class="heading">Unlock Your Style Potential with FitFair</h1>
@@ -45,56 +45,121 @@
           </div>
         </div>
         <div class="image">
-          <img src="img/Fitfair Mask Group.png" alt="image" />
-        </div>
-      </div>
-    </section>
-    <hr style="border: 0.5px solid black; max-width: 1200px; margin: auto" />
-    <section class="about-us">
-      <div class="section-container">
-        <div class="image">
-          <img src="img/Fitfair Mask Group.png" alt="image" />
-        </div>
-        <div class="content">
-          <h1 class="heading" style="text-align: center">About Us</h1>
-          <hr style="border: 0.5px solid black; margin: 20px 0" />
-          <p class="description">
-            Step into a world of personalized style. With Fitfair, you'll never
-            have to wonder what to wear again. Get ready to make every moment
-            stylish with recommendations that fit your unique look and
-            personality.
-          </p>
-          <p class="description">
-            Step into a world of personalized style. With Fitfair, you'll never
-            have to wonder what to wear again. Get ready to make every moment
-            stylish with recommendations that fit your unique look and
-            personality.
-          </p>
-
-          <div class="action-btn">
-            <button>Read More</button>
-          </div>
+          <img src="img/Fitfair Group 2.png" alt="image" />
         </div>
       </div>
       <hr style="border: 0.5px solid black; max-width: 1200px; margin: auto" />
     </section>
-    <section>
-      <div class="footer">
-        <div class="col-1">
-          <h3>Useful Links</h3>
-          <a href="#">Services</a>
-          <a href="#">Shop</a>
-          <a href="#">Blog</a>
+    <section id="about-us">
+      <div class="about-us">
+        <div class="text">
+          <h1 class="heading">About Us</h1>
+          <p class="description">
+            At Fitfair, we believe that fashion should be as unique as you are.
+            Our mission is to empower everyone to feel confident and stylish, no
+            matter their body shape or size. We understand that finding the
+            perfect outfit can be challenging, especially when you're unsure of
+            what suits you best. That's why we created Fitfair—a smart,
+            intuitive app that takes the guesswork out of getting dressed.
+            <br />
+            <br />
+            Our innovative AI technology analyzes your body shape and
+            preferences to provide personalized clothing and fragrance
+            recommendations tailored to your specific needs. Whether you're
+            preparing for a casual day out or a special occasion, Fitfair
+            ensures you step out feeling your best.
+          </p>
         </div>
-        <div class="col-2">
-          <h3>Subscribe to our NEWSLETTERS</h3>
-          <form action="">
-            <input type="text" placeholder="Email Address" />
-            <button type="submit">Submit</button>
-          </form>
+        <div class="photo">
+          <img src="img/Fitfair Group 3.png" alt="main-photo" />
         </div>
-        <div class="col-3">Follow Us On Social Media</div>
+      </div>
+      <hr style="border: 0.5px solid black; max-width: 1200px; margin: auto" />
+    </section>
+    <section id="pricing">
+      <div class="card-container">
+        <div class="price-plan-heading">
+          <h1>Price Plan</h1>
+        </div>
+        <div class="price-card-container">
+          <div class="price-card">
+            <p class="price">$10 <span>/ month</span></p>
+            <h2>Starter Plan</h2>
+            <p class="price-label">For Entepreneurs</p>
+            <div class="features">
+              <div><i class="bx bxs-check-circle"></i>Limited Support</div>
+              <div><i class="bx bxs-check-circle"></i>Clothes Limitation</div>
+              <div><i class="bx bxs-check-circle"></i>Intense Traffic</div>
+            </div>
+            <div class="action-btn">
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="price-card">
+            <p class="price">$40 <span>/ month</span></p>
+            <h2>Advanced Plan</h2>
+            <p class="price-label">For Small Businesses</p>
+            <div class="features">
+              <div><i class="bx bxs-check-circle"></i>Limited Support</div>
+              <div><i class="bx bxs-check-circle"></i>Clothes Limitation</div>
+              <div><i class="bx bxs-check-circle"></i>Intense Traffic</div>
+            </div>
+            <div class="action-btn">
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="price-card">
+            <p class="price">$70<span>/ month</span></p>
+            <h2>Premium Plan</h2>
+            <p class="price-label">For Large Business</p>
+            <div class="features">
+              <div><i class="bx bxs-check-circle"></i>Limited Support</div>
+              <div><i class="bx bxs-check-circle"></i>Clothes Limitation</div>
+              <div><i class="bx bxs-check-circle"></i>Intense Traffic</div>
+            </div>
+            <div class="action-btn">
+              <button>Add To Cart</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <section class="footer-container" id="footer">
+      <div class="footer">
+        <div class="upper">
+          <div class="upper-left">
+            <p class="logo-text">Fitfair</p>
+            <p class="copyright">
+              Copyright&#169; 2024.Fitfair All Rights Reserved
+            </p>
+          </div>
+          <div class="upper-right">
+            <h6>Get the latest Information</h6>
+            <form>
+              <i class="bx bx-envelope"></i>
+              <input type="text" placeholder="Email Address" />
+              <button type="submit">
+                <i class="bx bxs-send"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="lower">
+          <div class="lower-left">
+            <div>Home</div>
+            <div>About</div>
+            <div>Contact</div>
+          </div>
+          <div class="lower-right">
+            <div><i class="bx bxl-facebook"></i></div>
+            <div><i class="bx bxl-linkedin"></i></div>
+            <div><i class="bx bxl-twitter"></i></div>
+            <div><i class="bx bxl-youtube"></i></div>
+            <div><i class="bx bxl-instagram"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
