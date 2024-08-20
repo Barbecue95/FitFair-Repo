@@ -241,7 +241,6 @@ ul li a:hover {
   background-color: #d5d0cc;
   padding: 2rem;
   border-radius: 20px;
-  text-align: center;
 }
 
 .price {
@@ -263,7 +262,7 @@ ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin: 30px 0;
+  margin: 40px 0;
 }
 /*Price Plan CSS End*/
 
