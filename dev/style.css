@@ -6,7 +6,7 @@
   --light-blue: #738cab;
   --primary-black: #1e1e1e;
   --primary-white: #fefaf7;
-  --back-color: #d5d0cc;
+  --back-color: #fefaf7;
   --max-width: 1200px;
 }
 
@@ -238,7 +238,7 @@ ul li a:hover {
 }
 
 .price-card {
-  background-color: var(--primary-white);
+  background-color: #d5d0cc;
   padding: 2rem;
   border-radius: 20px;
   text-align: center;
