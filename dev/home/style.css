@@ -179,6 +179,7 @@ ul li a:hover {
   transition: all ease 0.55s;
 }
 
+/*Main Button*/
 .btn-holder {
   width: 100%;
   display: flex;

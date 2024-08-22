@@ -117,6 +117,39 @@ ul li a:hover {
   transition: all ease 0.3s;
 }
 
+section {
+  padding: 1rem 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Main Heading CSS*/
+.upper-text {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.main-heading,
+.sub-heading {
+  text-align: center;
+  color: var(--primary-blue);
+  font-family: "Noto Serif", sans-serif;
+  font-size: 50px;
+}
+
+.sub-heading {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.text {
+  padding: 2rem;
+  text-align: center;
+  max-width: var(--max-width);
+}
+
 .wrapper {
   max-width: var(--max-width);
   position: relative;
@@ -172,6 +205,56 @@ ul li a:hover {
   margin-left: 0;
 }
 
+.btn-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pill-button {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  padding: 10px 13px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-holder .pill-button i {
+  font-size: 30px; /* Adjust icon size if needed */
+  padding: 0;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+
+.pill-button:hover {
+  background-color: white;
+  color: var(--primary-black);
+  transition: 0.3s ease;
+  border: 1px solid black;
+  & i {
+    background-color: black;
+    color: var(--primary-white);
+  }
+  & p {
+    color: var(--primary-black);
+  }
+}
+
+.pill-button p {
+  font-size: 15px;
+  color: var(--primary-white);
+}
+
 /* Responsive CSS for Nav bar*/
 
 @media (max-width: 900px) {
@@ -205,6 +288,12 @@ ul li a:hover {
 
   .imageContainer img {
     width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 1150px) {
+  section {
+    padding: 1rem;
   }
 }
 
