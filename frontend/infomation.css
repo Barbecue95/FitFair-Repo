@@ -1,45 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-:root 
-{
+:root {
   --primary-blue: #3e5c76;
   --light-blue: #738cab;
   --primary-black: #1e1e1e;
   --primary-white: #fefaf7;
   --back-color: #fefaf7;
   --max-width: 1200px;
-  --font  :"Noto Serif";
+  --font: "Noto Serif";
 }
-* 
-{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-html 
-{
+html {
   scroll-behavior: smooth;
 }
 
-body 
-{
+body {
   font-family: Arial, sans-serif;
   background-color: var(--primary-white);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 1rem;
 }
 /* nav  */
-a 
-{
+a {
   text-decoration: none;
   color: var(--primary-black);
 }
 
-nav 
-{
+nav {
   width: 100%;
   position: fixed;
   top: 0;
@@ -49,8 +42,7 @@ nav
   z-index: 1;
 }
 
-.nav-content 
-{
+.nav-content {
   max-width: var(--max-width);
   margin: auto;
   padding: 1rem;
@@ -59,33 +51,28 @@ nav
   justify-content: space-between;
 }
 
-nav .logo a 
-{
+nav .logo a {
   font-size: 2.5rem;
   font-weight: 400;
   color: var(--primary-black);
   transition: all ease 0.3s;
 }
 
-nav .checkbox 
-{
+nav .checkbox {
   display: none;
 }
 
-nav input 
-{
+nav input {
   display: none;
 }
 
-nav .checkbox i 
-{
+nav .checkbox i {
   font-size: 2rem;
   color: var(--primary-black);
   cursor: pointer;
 }
 
-ul 
-{
+ul {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -93,26 +80,22 @@ ul
   transition: left 0.3s;
 }
 
-ul li a 
-{
+ul li a {
   padding: 0.5rem 1rem;
   text-decoration: none;
 }
 
-ul li a:active 
-{
+ul li a:active {
   color: var(--primary-blue);
 }
 
-ul li a:hover 
-{
+ul li a:hover {
   color: var(--light-blue);
   font-weight: 600;
   transition: all ease 0.3s;
 }
 
-#sign-in 
-{
+#sign-in {
   height: 40px;
   width: 80px;
   font-size: 17px;
@@ -124,8 +107,7 @@ ul li a:hover
   cursor: pointer;
 }
 
-#sign-in:hover 
-{
+#sign-in:hover {
   background-color: transparent;
   border: 2px solid black;
   color: var(--primary-black);
@@ -134,51 +116,44 @@ ul li a:hover
 
 /* nav */
 /* this is for the main content */
-.main-content
-{
+.main-content {
   margin-top: 80px;
   display: flex;
   margin-left: 30px;
   margin-right: 30px;
 }
-.mainLeftSide
-{
+.mainLeftSide {
   justify-content: flex-start;
   margin: auto;
   width: 50%;
 }
-.title 
-{
-    font-size: 40px;
-    font-family: var(--font);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--primary-blue);
-    margin-bottom: 30px;
-    width: 100%;
+.title {
+  font-size: 40px;
+  font-family: var(--font);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary-blue);
+  margin-bottom: 30px;
+  width: 100%;
 }
-.titlecontent
-{
+.titlecontent {
   margin-bottom: 20px;
   width: 100%;
 }
-.rightImgBodyShape 
-{
+.rightImgBodyShape {
   display: flex;
   justify-content: flex-start;
   width: 40%;
 }
 
-.rightImgBodyShape img 
-{
+.rightImgBodyShape img {
   width: 500px;
   height: auto;
 }
 /* 
 
 this is the container for the table of content */
-.container 
-{
+.container {
   background-color: var(--light-color);
   padding: 20px 00px 0px 0px;
   border-bottom: 1px solid black;
@@ -189,35 +164,30 @@ this is the container for the table of content */
   margin: auto;
 }
 
-.header 
-{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 14px;
 }
 
-.toggleButton 
-{
+.toggleButton {
   background-color: transparent;
   font-size: 30px;
   border: none;
   cursor: pointer;
 }
 
-.toggleButton:hover 
-{
+.toggleButton:hover {
   border: none;
 }
 
-.content 
-{
+.content {
   transition: opacity 0.3s ease, height 0.3s ease;
   overflow: hidden;
 }
 
-.content.hidden 
-{
+.content.hidden {
   opacity: 0;
   visibility: hidden;
   height: 0;
@@ -226,26 +196,22 @@ this is the container for the table of content */
 
 /* this is the start for the table of content inside part */
 
-.content 
-{
+.content {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
-.leftImgBodyShape img 
-{
+.leftImgBodyShape img {
   max-width: 95%;
-  height: auto; 
+  height: auto;
 }
 
-.rightSideHidden 
-{
+.rightSideHidden {
   width: 50%;
   float: left;
 }
 
-.titlecontentHidden 
-{
+.titlecontentHidden {
   font-family: var(--font);
   font-size: 16px;
 }
@@ -254,34 +220,29 @@ this is the container for the table of content */
 
 /* this is start for the image with a box part */
 
-.thirdPartContent
-{
+.thirdPartContent {
   margin: auto;
   width: 87%;
 }
-.howToMeasureYourBody h3
-{
-  font-family: var(--font) ;
+.howToMeasureYourBody h3 {
+  font-family: var(--font);
   color: var(--primary-blue);
   font-size: 30px;
   margin-bottom: 25px;
   margin-top: 40px;
 }
-.howToMeasureYourBody p
-{
+.howToMeasureYourBody p {
   margin-bottom: 30px;
 }
 
-.card-container 
-{
+.card-container {
   display: flex;
   gap: 90px;
   padding-top: 100px;
   margin: 20px;
   justify-content: center;
 }
-.character-card 
-{
+.character-card {
   position: relative;
   width: 290px;
   height: 220px;
@@ -292,8 +253,7 @@ this is the container for the table of content */
   padding-top: 60px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-.character-card img 
-{
+.character-card img {
   position: absolute;
   top: -120px;
   left: 50%;
@@ -323,35 +283,30 @@ this is the container for the table of content */
 
 /* this is start of the image button for the fourth Session */
 
-.imgbuttonFourthSection
-{
+.imgbuttonFourthSection {
   width: 86%;
 }
 
-.imgbuttonFourthSection h3
-{
+.imgbuttonFourthSection h3 {
   font-family: var(--font);
   color: var(--primary-blue);
   font-size: 30px;
   margin: 50px 0px 50px 0px;
 }
-.imgbuttonFourthSection p
-{
+.imgbuttonFourthSection p {
   font-family: var(--font);
   color: var(--primary-black);
   margin: 20px 0px 30px 0px;
   font-size: 20px;
 }
 
-.button-container 
-{
-    margin-bottom: 20px;
-    text-align: start;
+.button-container {
+  margin-bottom: 20px;
+  text-align: start;
 }
 
 /* Button Style */
-.button-container button 
-{
+.button-container button {
   position: relative;
   padding: 10px 0px;
   font-size: 16px;
@@ -364,9 +319,8 @@ this is the container for the table of content */
 }
 
 /* Gradient Underline */
-.button-container button::before 
-{
-  content: '';
+.button-container button::before {
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -377,43 +331,37 @@ this is the container for the table of content */
 }
 
 /* Hover Effect */
-.button-container button:hover::before 
-{
+.button-container button:hover::before {
   width: 100%;
 }
 
-.image-container 
-{
-    display: flex;
-    justify-content: center;
+.image-container {
+  display: flex;
+  justify-content: center;
 }
 
-#bodyTypeImage 
-{
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: white;
+#bodyTypeImage {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
 }
 
 /* this is end of the image button for the fourth Session */
 
 /* this is the start for the footer part of the session */
 
-
 /*Footer CSS*/
 
-.footer-container 
-{
+.footer-container {
   background-color: var(--primary-black);
   border-radius: 1rem 1rem 0 0;
   width: 100%;
 }
 
-.footer 
-{
+.footer {
   height: 12rem;
   max-width: var(--max-width);
   margin: auto;
@@ -422,8 +370,7 @@ this is the container for the table of content */
   grid-template-columns: repeat(1, 1fr);
 }
 
-.upper 
-{
+.upper {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -531,106 +478,99 @@ form .bxs-send:hover {
 
 /*Footer CSS End*/
 
-
 /* this is the end for the footer part of the session */
 
-
 /* this is for the responsive part */
-@media (width < 1250px) 
-{
-    nav .checkbox 
-    {
-      display: block;
-    }
-  
-    ul {
-      position: absolute;
-      width: 100%;
-      height: calc(100vh - 85px);
-      left: -100%;
-      top: 85px;
-      background-color: var(--back-color);
-      flex-direction: column;
-      justify-content: center;
-      gap: 3rem;
-    }
-  
-    nav #check:checked ~ ul {
-      left: 0;
-    }
-  
-    ul li a {
-      font-size: 1.25rem;
-    }
-  
-    .section-container {
-      padding: 7rem 1rem;
-      text-align: center;
-      grid-template-columns: repeat(1, 1fr);
-    }
-  
-    .image {
-      grid-area: 1/1/2/2;
-    }
-  
-    .action-btn {
-      margin: auto;
-    }
-  
-    .price-card-container {
-      grid-template-columns: repeat(1, 1fr);
-      padding: 0 10rem;
-    }
-  
-    .price-card {
-      text-align: center;
-    }
-  
-    .footer {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .upper {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 0rem;
-      align-items: center;
-      justify-content: center;
-      border: none;
-      padding: 1.5rem;
-    }
-  
-    .lower {
-      justify-content: flex-end;
-    }
-  
-    .lower-left {
-      display: none;
-    }
-  
-    .lower-right {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 0;
-      padding: 1rem;
-    }
+@media (width < 1250px) {
+  nav .checkbox {
+    display: block;
+  }
 
-/* this is for the main content */
-.main-content
-{
-  margin: 100px 0 30px 0;
-  display: flex;
-  flex-direction: column;
-}
-.mainLeftSide
-{
-  justify-content: flex-start;
-  margin: auto;
-  width: 90%;
-}
-.title 
-{
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--back-color);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section-container {
+    padding: 7rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action-btn {
+    margin: auto;
+  }
+
+  .price-card-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 10rem;
+  }
+
+  .price-card {
+    text-align: center;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .upper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 1.5rem;
+  }
+
+  .lower {
+    justify-content: flex-end;
+  }
+
+  .lower-left {
+    display: none;
+  }
+
+  .lower-right {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 1rem;
+  }
+
+  /* this is for the main content */
+  .main-content {
+    margin: 100px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainLeftSide {
+    justify-content: flex-start;
+    margin: auto;
+    width: 90%;
+  }
+  .title {
     font-size: 40px;
     font-family: var(--font);
     text-transform: uppercase;
@@ -638,68 +578,57 @@ form .bxs-send:hover {
     color: var(--primary-blue);
     margin-bottom: 30px;
     width: 100%;
-}
-.titlecontent
-{
-  margin-bottom: 20px;
-  width: 100%;
-}
-.rightImgBodyShape 
-{
-  justify-content: center;
-  width: 100%;
-}
+  }
+  .titlecontent {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .rightImgBodyShape {
+    justify-content: center;
+    width: 100%;
+  }
 
-.rightImgBodyShape img 
-{
-  width: 300px;
-  height: auto;
-}
+  .rightImgBodyShape img {
+    width: 300px;
+    height: auto;
+  }
 
-/* this is for the content sector */
-/* this is the start for the table of content inside part */
+  /* this is for the content sector */
+  /* this is the start for the table of content inside part */
 
-.content 
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-}
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.leftImgBodyShape img 
-{
-  max-width: 95%;
-}
+  .leftImgBodyShape img {
+    max-width: 95%;
+  }
 
-.rightSideHidden 
-{
-  width: 100%;
-  padding-bottom: 30px;
-}
-.titlecontentHidden 
-{
-  font-family: var(--font);
-  font-size: 16px;
-}
+  .rightSideHidden {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .titlecontentHidden {
+    font-family: var(--font);
+    font-size: 16px;
+  }
 
-/* this is the end for the table of content inside part */
+  /* this is the end for the table of content inside part */
 
-/* this is for the fourth session */
-.card-container 
-{
-  flex-wrap: wrap;
-  gap: 100px;
-}
+  /* this is for the fourth session */
+  .card-container {
+    flex-wrap: wrap;
+    gap: 100px;
+  }
 
-/* this is for button type */
-.button-container
-{
-  gap:0px;
-}
-.button-container button
-{
-  font-size: 10px;
-  gap: 0;
-
-}
+  /* this is for button type */
+  .button-container {
+    gap: 0px;
+  }
+  .button-container button {
+    font-size: 10px;
+    gap: 0;
+  }
 }
